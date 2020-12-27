@@ -1,0 +1,18 @@
+﻿curl command for grant type :ResourceOwnerPasswordAndClientCredentials
+
+curl --location --request POST 'https://localhost:44391/connect/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'username=user' \
+--data-urlencode 'password=password' \
+--data-urlencode 'grant_type=password' \
+--data-urlencode 'client_id=Clnt02' \
+--data-urlencode 'client_secret=Secretpassword2'
+
+curl command for grant type :ClientCredentials
+
+curl --location --request POST 'https://localhost:44391/connect/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'grant_type=client_credentials' \
+--data-urlencode 'client_id=Clnt01' \
+--data-urlencode 'client_secret=Secretpassword'
+
