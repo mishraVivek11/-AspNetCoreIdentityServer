@@ -16,3 +16,12 @@ curl --location --request POST 'https://localhost:44391/connect/token' \
 --data-urlencode 'client_id=Clnt01' \
 --data-urlencode 'client_secret=Secretpassword'
 
+
+curl --location --request POST 'https://localhost:44391/connect/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'username=user' \
+--data-urlencode 'password=password' \
+--data-urlencode 'grant_type=password' \
+--data-urlencode 'client_id=Clnt03_RFT' \
+--data-urlencode 'client_secret=Secretpassword3'
+
